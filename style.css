@@ -171,3 +171,20 @@ body {
 .sticky-nav a:hover {
   color: #000;
 }
+
+.image-wrapper {
+  position: relative;
+}
+
+.image-wrapper:hover::after {
+  content: "© Shammas Oliyath";
+  position: absolute;
+  bottom: 8px;
+  right: 10px;
+  font-size: 0.65rem;
+  color: rgba(255, 255, 255, 0.75);
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 2px 6px;
+  border-radius: 3px;
+  pointer-events: none;
+}
