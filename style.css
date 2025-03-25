@@ -68,12 +68,13 @@ nav a:hover {
   margin-bottom: 1rem;
   border-radius: 8px;
   display: inline-block;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
 }
 
 .gallery img:hover {
-  transform: scale(1.02);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);  
+  transform: scale(1.03) translateY(-2px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+  filter: brightness(1.03);
 }
 
 .section-wrapper {
@@ -94,8 +95,7 @@ nav a:hover {
   padding: 2rem;
   max-width: 400px;
   flex: 1 1 300px;
-  animation: fadeInUp 0.9s ease-in-out both;
-  animation-delay: 0.2s;
+  animation: fadeInUp 1s ease-in-out both;
 }
 
 .card-box h2 {
@@ -138,23 +138,4 @@ nav a:hover {
   background-color: #f9f9f9;
   border-top: 1px solid #ddd;
   letter-spacing: 0.5px;
-}
-.intro-tagline {
-  font-size: 1.1rem;
-  color: #555;
-  margin-bottom: 0.5rem;
-  font-style: italic;
-  letter-spacing: 0.5px;
-  animation: fadeIn 1.2s ease-out both;
-}
-
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
