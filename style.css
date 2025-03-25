@@ -29,25 +29,6 @@ body {
   color: #111111;
 }
 
-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-  margin-top: 1rem;
-}
-
-nav a {
-  text-decoration: none;
-  color: #1a1a1a;
-  font-weight: 500;
-  transition: color 0.3s;
-}
-
-nav a:hover {
-  color: #000000;
-}
-
 .gallery.minimal {
   column-count: 3;
   column-gap: 1rem;
