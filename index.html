@@ -12,6 +12,25 @@
   <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
   <title>Shammas Photography</title>
   <script defer src="script.js"></script>
+  <style>
+    #scrollTopBtn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      padding: 10px 16px;
+      font-size: 14px;
+      background-color: #111;
+      color: #fff;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.3s ease;
+      z-index: 1000;
+    }
+  </style>
 </head>
 
 <body>
@@ -45,9 +64,31 @@
     </section>
   </main>
 
+  <button id="scrollTopBtn" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">↑ Top</button>
+
   <footer class="footer minimal">
     <p>&copy; 2025 Shammas. All rights reserved.</p>
   </footer>
+
+  <script>
+    const scrollTopBtn = document.getElementById('scrollTopBtn');
+    let hideTimeout;
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 300) {
+        scrollTopBtn.style.opacity = '1';
+        scrollTopBtn.style.visibility = 'visible';
+        clearTimeout(hideTimeout);
+        hideTimeout = setTimeout(() => {
+          scrollTopBtn.style.opacity = '0';
+          scrollTopBtn.style.visibility = 'hidden';
+        }, 2500);
+      } else {
+        scrollTopBtn.style.opacity = '0';
+        scrollTopBtn.style.visibility = 'hidden';
+      }
+    });
+  </script>
 </body>
 
 </html>
