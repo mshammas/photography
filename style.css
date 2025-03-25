@@ -47,19 +47,20 @@ nav a:hover {
 .gallery.minimal {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1rem;
-  padding: 2rem;
+  gap: 0;
+  padding: 0;
   background-color: #fafafa;
 }
 
 .gallery img {
   width: 100%;
-  border-radius: 8px;
+  display: block;
+  border-radius: 0;
   transition: transform 0.3s;
 }
 
 .gallery img:hover {
-  transform: scale(1.03);
+  transform: scale(1.02);
 }
 
 .about.minimal,
