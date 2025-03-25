@@ -31,6 +31,10 @@
       z-index: 1000;
     }
   </style>
+  
+  <!-- AOS Animate on Scroll Library -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>  
 </head>
 
 <body>
@@ -53,12 +57,12 @@
     </section>
 
     <div class="section-wrapper">
-      <div class="card-box">
+      <div class="card-box" data-aos="fade-up">
         <h2>About Me</h2>
         <p>I’m Shammas Oliyath, and this is a curated gallery of moments I've captured through the lens. Photography is not just my passion—it's my way of storytelling.</p>
       </div>
     
-      <div class="card-box">
+      <div class="card-box" data-aos="fade-up" data-aos-delay="200">
         <h2>Contact</h2>
         <p>Visit my website: <a href="https://shammas.in" target="_blank">shammas.in</a><br>
            Instagram: <a href="https://instagram.com/shammasoliyath" target="_blank">@shammasoliyath</a></p>
@@ -90,6 +94,10 @@
         scrollTopBtn.style.visibility = 'hidden';
       }
     });
+    AOS.init({
+      duration: 1000,
+      once: true
+    });    
   </script>
 </body>
 
