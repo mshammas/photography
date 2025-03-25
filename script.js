@@ -100,7 +100,7 @@ const gallerySection = document.querySelector('.gallery');
 gallerySection.innerHTML = imagePaths
   .map((src, index) => `
     <div class="image-wrapper" style="animation-delay: ${index * 100}ms">
-      <img src="${src}" alt="Shammas Photography ${index + 1}" loading="lazy" onclick="openLightbox('${src}')" />
+      <img src="${src}" alt="Shammas Photography ${index + 1}" loading="lazy" onclick="openLightbox('${src}')" data-aos="fade-up" data-aos-delay="${index * 50}" />
     </div>
   `)
   .join('');
