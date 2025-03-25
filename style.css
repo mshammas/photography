@@ -96,6 +96,13 @@ nav a:hover {
   max-width: 400px;
   flex: 1 1 300px;
   animation: fadeInUp 1s ease-in-out both;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;  
+}
+
+.card-box:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card-box h2 {
