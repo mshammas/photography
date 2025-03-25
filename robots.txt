@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://shammas.github.io/sitemap.xml
