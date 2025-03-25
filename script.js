@@ -104,6 +104,9 @@ gallerySection.innerHTML = imagePaths
     </div>
   `)
   .join('');
+if (typeof AOS !== 'undefined') {
+  AOS.refresh();
+}
 const lightbox = document.createElement('div');
 lightbox.id = 'lightbox';
 lightbox.style.position = 'fixed';
