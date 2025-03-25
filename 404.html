@@ -3,48 +3,67 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Page Not Found - Shammas Photography</title>
+  <title>404 Not Found | Shammas Photography</title>
   <link rel="stylesheet" href="style.css" />
   <style>
     body {
+      margin: 0;
+      padding: 0;
+      background: url('images/1-img_3010.jpg') no-repeat center center;
+      background-size: cover;
+      filter: blur(4px);
+      height: 100vh;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0,0,0,0.6);
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      height: 100vh;
       text-align: center;
-      background-color: #f6f6f6;
-      color: #333;
+      color: #ffffff;
+      padding: 2rem;
     }
 
-    h1 {
-      font-size: 6rem;
-      margin-bottom: 0.5rem;
+    .overlay h1 {
+      font-size: 5rem;
+      margin-bottom: 1rem;
     }
 
-    p {
+    .overlay p {
       font-size: 1.2rem;
       margin-bottom: 2rem;
+      font-style: italic;
     }
 
-    a {
+    .overlay a {
       text-decoration: none;
-      padding: 0.6rem 1.2rem;
-      background-color: #111;
-      color: #fff;
+      padding: 0.6rem 1.4rem;
+      background-color: #ffffff;
+      color: #111111;
       border-radius: 6px;
       font-weight: 500;
       transition: background 0.3s;
     }
 
-    a:hover {
-      background-color: #333;
+    .overlay a:hover {
+      background-color: #e0e0e0;
     }
   </style>
 </head>
 <body>
-  <h1>404</h1>
-  <p>Oops! The page you're looking for doesn't exist.</p>
-  <a href="/">Back to Home</a>
+  <div class="overlay">
+    <h1>404</h1>
+    <p>You seem to have wandered out of focus.</p>
+    <a href="/">Back to the Gallery</a>
+  </div>
 </body>
 </html>
