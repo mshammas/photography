@@ -63,12 +63,12 @@
     </section>
 
     <div class="section-wrapper">
-      <div class="card-box" data-aos="fade-up">
+      <div class="card-box" data-aos="fade-up" data-aos-delay="100">
         <h2>About Me</h2>
         <p>I’m Shammas Oliyath, and this is a curated gallery of moments I've captured through the lens. Photography is not just my passion—it's my way of storytelling.</p>
       </div>
     
-      <div class="card-box" data-aos="fade-up" data-aos-delay="200">
+      <div class="card-box" data-aos="fade-up" data-aos-delay="300">
         <h2>Contact</h2>
         <p>Visit my website: <a href="https://shammas.in" target="_blank">shammas.in</a><br>
            Instagram: <a href="https://instagram.com/shammasoliyath" target="_blank">@shammasoliyath</a></p>
@@ -102,7 +102,8 @@
     });
     AOS.init({
       duration: 1000,
-      once: true
+      once: true,
+      offset: 100 // Start animation slightly later as you scroll
     });    
   </script>
 </body>
