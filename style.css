@@ -68,11 +68,12 @@ nav a:hover {
   margin-bottom: 1rem;
   border-radius: 8px;
   display: inline-block;
-  transition: transform 0.3s;
+  transition: transform 0.3s ease;
 }
 
 .gallery img:hover {
   transform: scale(1.02);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);  
 }
 
 .section-wrapper {
