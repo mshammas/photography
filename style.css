@@ -83,6 +83,7 @@ nav a:hover {
   padding: 2rem;
   background-color: #f6f8fa;
   border-top: 1px solid #e0e0e0;
+  animation: fadeInUp 1s ease-in-out both;
 }
 
 .card-box {
@@ -92,6 +93,7 @@ nav a:hover {
   padding: 2rem;
   max-width: 400px;
   flex: 1 1 300px;
+  animation: fadeInUp 1s ease-in-out both;
 }
 
 .card-box h2 {
@@ -115,10 +117,23 @@ nav a:hover {
   text-decoration: underline;
 }
 
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .footer.minimal {
   text-align: center;
-  padding: 1rem;
-  font-size: 0.9rem;
-  color: #444444;
-  border-top: 1px solid #cccccc;
+  padding: 2rem;
+  font-size: 0.95rem;
+  color: #666;
+  background-color: #f9f9f9;
+  border-top: 1px solid #ddd;
+  letter-spacing: 0.5px;
 }
