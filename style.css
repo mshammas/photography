@@ -93,7 +93,8 @@ nav a:hover {
   padding: 2rem;
   max-width: 400px;
   flex: 1 1 300px;
-  animation: fadeInUp 1s ease-in-out both;
+  animation: fadeInUp 0.9s ease-in-out both;
+  animation-delay: 0.2s;
 }
 
 .card-box h2 {
@@ -146,10 +147,10 @@ nav a:hover {
   animation: fadeIn 1.2s ease-out both;
 }
 
-@keyframes fadeIn {
+@keyframes fadeInUp {
   from {
     opacity: 0;
-    transform: translateY(-10px);
+    transform: translateY(50px);
   }
   to {
     opacity: 1;
