@@ -99,8 +99,8 @@ const imagePaths = [
 const gallerySection = document.querySelector('.gallery');
 gallerySection.innerHTML = imagePaths
   .map((src, index) => `
-    <div class="image-wrapper" style="animation-delay: ${index * 100}ms">
-      <img src="${src}" alt="Shammas Photography ${index + 1}" loading="lazy" onclick="openLightbox('${src}')" data-aos="fade-up" data-aos-delay="${index * 50}" />
+    <div class="image-wrapper" data-aos="fade-up" data-aos-delay="${index * 50}">
+      <img src="${src}" alt="Shammas Photography ${index + 1}" loading="lazy" onclick="openLightbox('${src}')" />
     </div>
   `)
   .join('');
@@ -128,18 +128,3 @@ function openLightbox(src) {
 lightbox.addEventListener('click', () => {
   lightbox.style.display = 'none';
 });
-const style = document.createElement('style');
-style.innerHTML = `
-  .image-wrapper {
-    opacity: 0;
-    transform: translateY(30px);
-    animation: fadeInUp 0.8s forwards;
-  }
-  @keyframes fadeInUp {
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-`;
-document.head.appendChild(style);
